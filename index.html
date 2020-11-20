@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- build:css dist/index.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+
+    <title>Tienda On Line</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Tienda</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>            
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav -item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav -item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+                <li class="nav -item"><a class="nav-link" href="#">Términos y condiciones</a></li>
+                <li class="nav -item"><a class="nav-link" href="./promociones.html">Promociones</a></li>
+                <li class="nav -item"><a class="nav-link" href="./contacto.html">Contactos</a></li>
+            </ul>            
+        </div>
+        
+    </nav>
+    <div class="jumbotron">
+        <div class="row">
+            <img src="images/tiendaOnLine.jpg" 
+             alt="Tienda img" 
+             height="100"
+             width="100"
+             style="border-radius: 30px">
+            <h3 class="text-jumbotron">Tienda On Line</h3>
+        </div>
+    </div>
+    
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>               
+            </ol>            
+        </nav>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#empeza" aria-expanded="false" aria-controls="multicollapse1">Empezá ahora</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multicollapse2">¿Como funciona?</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pregunta" aria-expanded="false" aria-controls="multicollapse3">Preguntas frecuentes</button>
+            </div>
+            
+        </div>
+
+    	<div class="row">
+    		<div class="col-sm-4 collapse multi-collapse" id="empeza">
+    			<h3>Empezá ahora</h3>
+    			<p>Llena el formulario con tus datos: nombre, dirección, y correo electronico.</p>    			
+    		</div>
+    		<div class="col-sm-4 collapse multi-collapse" id="funciona">
+    			<h3>¿Como funciona?</h3>
+    			<p>Agregas al carrito los productos de tu interes, y una vez terminado, pagás y listo! Tu compra la recibis en tu domicilio.</p>   				
+    			    			
+    		</div> 
+    		<div class="col-sm-4 collapse multi-collapse" id="pregunta">
+    			<h3>Preguntas frecuentes</h3>
+    			<p>Aquí tendras las preguntas habituales y sus respuestas para que te saques las dudas mas recurrentes.</p>    			
+    		</div>
+        </div>     		
+    	
+    	<hr>
+
+        <div id="carouselControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/oferta1.jpg" class="d-block w-100" alt="oferta1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/oferta2.jpg" class="d-block w-100" alt="oferta2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/oferta3.jpg" class="d-block w-100" alt="oferta3">
+                </div>
+            </div>
+            <a href="#carouselControls" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a href="#carouselControls" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+            
+        </div>
+
+        <div class="alert alert-info alert-dismissible fade-show" role="alert" data-toggle="tooltip" data-placement="top" title="Los productos se encuentra seleccionados con la etiqueta Black Friday" alert-info style="margin-top: 20px">
+            <strong>Black Friday!</strong> Aprovecha los mejores descuentos.
+        
+        </div>
+
+        <div class="d-flex flex-wrap">
+        	<div class=" card card-producto d-flex flex-column justify-content-between ml-2">
+                <img src="images/tecnologia.jpg" class="card-img-top" alt="Notebook img">
+        		  <div class="card-body">
+        				<h5 class="card-title">Notebook</h5>
+                        <h6 class="card-subtitle text-muted">Tecnología</h6>
+        				<p class="card-tex">Aquí encontraras todos los productos con la mejor tecnología del momento, con gran variedad y excelentes precios.</p>
+                        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#suscripcion" id="descuentoBtn">Descuento especial</button>
+        		   </div>
+        			<div> 				
+        				<button class="btn btn-primary btn-verProducto" type="button" data-toggle="popover" title="Promociones" data-content="Consulta los descuentos especiales por el BLACK FRIDAY"><span class="oi oi-cart footer-address-icon"></span>Ver productos</button> 
+        			</div>
+        			   			
+        	</div>
+        	<div class=" card card-producto d-flex flex-column justify-content-between ml-2">
+                <img src="images/indumentaria.jpg" class="card-img-top" alt="Indumentaria img">
+        		  <div class="card-body">
+        			<h5 class="card-title">Indumentaria</h5>
+                    <h6 class="card-subtitle text-muted">Moda</h6>
+        			<p class="card-tex">Toda la moda y tendencia en un solo lugar, no te pierdas las nueva temporada primavera-verano!</p>
+        		</div>
+        		<div>   				  
+        			<button class="btn btn-primary btn-verProducto"><span class="oi oi-cart footer-address-icon"></span>Ver productos</button>
+        		</div>	   			
+        	</div>
+
+        	<div class="card card-producto d-flex flex-column justify-content-between ml-2">
+                <img src="images/decohogar.jpg" class="card-img-top" alt="Decohogar img">
+        			<div class="card-body">
+        				<h5 class="card-title">Sommiers</h5>
+                        <h6 class="card-subtitle text-muted">Deco Hogar</h6>
+        				<p class="card-tex">Renová tu casa! Encontra lo nuevo en decoración y muebles para tu hogar, excelente calidad y con precios increibles.</p>
+        			</div>
+        			<div>    				  
+        				<button class="btn btn-primary btn-verProducto"><span class="oi oi-cart footer-address-icon"></span>Ver productos</button>	
+        			</div>   			
+        	</div>
+
+            <div class="card card-producto d-flex flex-column justify-content-between ml-2">
+                <img src="images/lineablanca.jpg" class="card-img-top" alt="Cocina img">
+            		<div class="card-body">
+            		    <h5 class="card-title">Cocinas</h5>
+                        <h6 class="card-subtitle text-muted">Linea Blanca</h6>
+            		    <p class="card-text">Remodela tu cocina y encontrá los ultimos productos en cocinas, lavarropas, heladeras y muchos más.</p>
+            		</div>
+        		    <div>
+        			    <button class="btn btn-primary btn-verProducto"><span class="oi oi-cart footer-address-icon"></span>Ver productos</button>
+        		    </div>   			
+        	</div>
+
+        	<div class="card card-producto d-flex flex-column justify-content-between ml-2">
+                <img src="images/ferreteria.jpg" class="card-img-top" alt="Herramientas img">
+        		    <div class="card-body">
+        			    <h5 class="card-title">Herramientas</h5>
+                        <h6 class="card-subtitle text-muted">Ferretería</h6>
+        				<p class="card-text">Encontra todas la herramientas que te hagan falta, todas la marcas y en un solo lugar.</p> 
+        		    </div>
+        		    <div>
+        			    <button class="btn btn-primary  btn-verProducto"><span class="oi oi-cart footer-address-icon"></span>Ver productos</button>
+        		    </div>   			
+        	</div>
+
+            <div class="card card-producto d-flex flex-column justify-content-between ml-2">
+                <img src="images/tiempolibre.jpg" class="card-img-top" alt="Bicicleta img">
+                    <div class="card-body">
+                        <h5 class="card-title">Bicicletas</h5>
+                        <h6 class="card-subtitle text-muted">Tiempo libre</h6>
+                        <p class="card-text">Los mejores productos para disfrutar del tiempo libre</p> 
+                    </div>
+                    <div>
+                        <button class="btn btn-primary  btn-verProducto"><span class="oi oi-cart footer-address-icon"></span>Ver productos</button>
+                    </div>              
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div class="modal fade" id="suscripcion" tabindex="-1" role="dialog" aria-labelledby="suscripcionModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="suscripcionModalLabel">Datos para la suscripción</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>                        
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Ingresa tu email</label>
+                                <input type="text" id="recipient-name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-name" class="col-form-label">Categorias favoritas</label>
+                                <textarea type="text" id="message-name" class="form-control"></textarea>
+                            </div>                            
+                        </form>                        
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Confirmar</button>
+                    </div>
+                </div>                
+            </div>            
+        </div>
+
+    </div>
+         
+    	<footer>
+    		<div class="row">
+    			<div class="col-sm-4 d-flex flex-column">
+    				<a href="http://www.facebook.com">Facebook</a>
+		  			<a href="http://www.twitter.com">Twitter</a>
+		  			<a href="http://www.instagram.com">Instagram</a>   				
+    			</div>
+    			<div class="col-sm-4 d-flex flex-column">
+    				<address>
+    					<h3>Oficina Central</h3>
+                        <p><span class="oi oi-location footer-address-icon"></span>Aconcagua 714, Mendoza, Argentina</p>
+                        <p><span class="oi oi-phone footer-address-icon"></span>+54 261123456</p>
+                        <p><span class="oi oi-envelope-closed footer-address-icon"></span>tiendaonline@gmail.com</p>
+    				</address>    				
+    			</div>
+    			<div class="col-sm-4 d-flex flex-column align-items-end">
+    				<a href="http://www.facebook.com">Promociones bancarias</a>
+		  			<a href="http://www.twitter.com">Nosotros</a>
+		  			<a href="www.google.com">Contactos</a>
+		  			<a href="http://www.instagram.com">Términos y condiciones</a>   			
+    			</div>    			
+    		</div>    		
+    	</footer>    	
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- build:js dist/index.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>
